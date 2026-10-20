@@ -1,0 +1,15 @@
+name = "ca-star-survey"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# After you run:
+#   npx wrangler d1 create ca-star-survey-db
+# wrangler will print a database_id. Paste it below.
+[[d1_databases]]
+binding = "DB"
+database_name = "ca-star-survey-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Optional: set a secret so GET /api/responses requires a key.
+#   npx wrangler secret put ADMIN_KEY
+# (If you skip this, the admin export route is simply disabled.)
